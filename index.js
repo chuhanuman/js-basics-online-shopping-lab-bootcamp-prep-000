@@ -18,7 +18,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+  var temp = "In your cart, you have ";
+  for (let i=0;cart.length>i;i++){
+    if (i === cart.length-1){
+      ""
+    }
+  }
 }
 
 function total() {
@@ -34,7 +39,7 @@ function placeOrder(cardNumber) {
 }
 viewCart();
 addToCart("bananas");
+viewCart();
 addToCart("apples");
-console.log(cart);
 addToCart("oranges");
-console.log(cart);
+viewCart();
