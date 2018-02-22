@@ -69,17 +69,23 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber) {
+    
+  } else {
+    
+  }
 }
 viewCart();
 addToCart("bananas");
 console.log(total());
 viewCart();
+placeOrder();
 removeFromCart("eggs");
 addToCart("pancake batter");
 console.log(total());
 viewCart();
 addToCart("eggs");
+placeOrder(5);
 viewCart();
 removeFromCart("eggs");
 addToCart("milk");
