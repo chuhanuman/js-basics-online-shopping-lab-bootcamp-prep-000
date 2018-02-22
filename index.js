@@ -47,6 +47,6 @@ function placeOrder(cardNumber) {
 viewCart();
 addToCart("bananas");
 viewCart();
-addToCart("pankake batter");
+addToCart("pancake batter");
 addToCart("eggs");
 viewCart();
