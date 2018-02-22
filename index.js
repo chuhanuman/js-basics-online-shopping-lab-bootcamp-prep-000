@@ -51,7 +51,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var inCart = false;
+  var itemIndex = NaN;
+  itemIndex = 1;
 }
 
 function placeOrder(cardNumber) {
@@ -61,11 +63,13 @@ viewCart();
 addToCart("bananas");
 console.log(total());
 viewCart();
+removeFromCart(eggs);
 addToCart("pancake batter");
 console.log(total());
 viewCart();
 addToCart("eggs");
 viewCart();
+removeFromCart(eggs);
 addToCart("milk");
 viewCart();
 addToCart("cookies");
