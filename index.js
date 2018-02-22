@@ -54,6 +54,7 @@ function removeFromCart(item) {
   var inCart = false;
   var itemIndex = NaN;
   itemIndex = 1;
+  console.log(itemIndex);
 }
 
 function placeOrder(cardNumber) {
