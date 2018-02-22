@@ -22,9 +22,10 @@ function viewCart() {
   if (cart.length === 0) {
     temp = "Your shopping cart is empty.";
   } else if (cart.length === 1) {
-    
+    let temp2 = Object.keys(cart[0]);
   } else if (cart.length === 2) {
-    
+    let temp2 = Object.keys(cart[0]);
+    var temp3 = Object.keys(cart[1]);
   } else {
     for (let i=0;cart.length>i;i++){
       var temp2 = Object.keys(cart[i]);
