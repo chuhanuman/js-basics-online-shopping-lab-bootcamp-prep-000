@@ -49,4 +49,4 @@ viewCart();
 addToCart("apples");
 addToCart("oranges");
 viewCart();
-console.log(cart[0].bananas);
+console.log(cart[0]);
