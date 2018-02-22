@@ -26,7 +26,7 @@ function viewCart() {
     if (i === cart.length-1){
       temp = temp + `and ${cart[i]} at $${i}.`;
     } else {
-      temp = temp + `${i} at $${i}, `;
+      temp = temp + `${cart[i]} at $${i}, `;
     }
   }
   console.log(temp);
