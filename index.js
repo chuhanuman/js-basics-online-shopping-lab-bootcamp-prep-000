@@ -53,8 +53,16 @@ function total() {
 function removeFromCart(item) {
   var inCart = false;
   var itemIndex = NaN;
-  itemIndex = 1;
-  console.log(itemIndex);
+  for (let i=0;cart.length>i;i++) {
+    if (Object.keys(cart[i]) === item) {
+      inCart = true;
+      itemIndex = i;
+    }
+  }
+  if (inCart) {
+    
+    return cart;
+  }
 }
 
 function placeOrder(cardNumber) {
