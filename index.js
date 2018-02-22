@@ -20,10 +20,16 @@ function addToCart(item) {
 function viewCart() {
   var temp = "In your cart, you have ";
   if (cart.length === 0) {
-    temp = "Your shopping cart is empty."
+    temp = "Your shopping cart is empty.";
+  } else if (cart.length === 1) {
+    
+  } else if (cart.length === 2) {
+    
+  } else {
+    
   }
   for (let i=0;cart.length>i;i++){
-    var temp2 = Object.keys(cart[i])
+    var temp2 = Object.keys(cart[i]);
     if (i === cart.length-1){
       temp = temp + `and ${temp2} at $${cart[i][temp2]}.`;
     } else {
