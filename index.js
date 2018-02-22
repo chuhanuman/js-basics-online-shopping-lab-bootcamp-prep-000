@@ -23,10 +23,11 @@ function viewCart() {
     temp = "Your shopping cart is empty.";
   } else if (cart.length === 1) {
     let temp2 = Object.keys(cart[0]);
-    temp = temp + `${temp2} at $${cart[0][temp2]}`;
+    temp = temp + `${temp2} at $${cart[0][temp2]}.`;
   } else if (cart.length === 2) {
     let temp2 = Object.keys(cart[0]);
     var temp3 = Object.keys(cart[1]);
+    temp = temp + `${temp2} at $${cart[0][temp2]} and ${temp3} at $${cart[1][temp3]}.`;
   } else {
     for (let i=0;cart.length>i;i++){
       let temp2 = Object.keys(cart[i]);
