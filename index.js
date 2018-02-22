@@ -19,11 +19,17 @@ function addToCart(item) {
 
 function viewCart() {
   var temp = "In your cart, you have ";
+  if (cart.length === 0) {
+    temp = "Your shopping cart is empty."
+  }
   for (let i=0;cart.length>i;i++){
     if (i === cart.length-1){
-      ""
+      temp = temp + `and ${} at $${}.`;
+    } else {
+      temp = temp + `${} at $${}, `;
     }
   }
+  return temp;
 }
 
 function total() {
@@ -43,3 +49,4 @@ viewCart();
 addToCart("apples");
 addToCart("oranges");
 viewCart();
+console.log(cart[0]);
