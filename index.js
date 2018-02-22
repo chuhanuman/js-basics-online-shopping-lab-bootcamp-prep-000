@@ -24,9 +24,9 @@ function viewCart() {
   }
   for (let i=0;cart.length>i;i++){
     if (i === cart.length-1){
-      temp = temp + `and ${cart[i]} at $${i}.`;
+      temp = temp + `and ${Object.keys(cart[0])} at $${i}.`;
     } else {
-      temp = temp + `${cart[i]} at $${i}, `;
+      temp = temp + `${Object.keys(cart[0])} at $${cart[0].Object.keys(cart[0])}, `;
     }
   }
   console.log(temp);
@@ -49,4 +49,3 @@ viewCart();
 addToCart("pankake batter");
 addToCart("eggs");
 viewCart();
-console.log(Object.keys(cart[0]));
