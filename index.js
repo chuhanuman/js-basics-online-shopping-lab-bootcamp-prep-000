@@ -42,7 +42,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var cost = 0;
+  for (let i=0;cart.length>i;i++) {
+    let temp = Object.keys(cart[i]);
+    cost = cost + cart[i][temp]
+  }
 }
 
 function removeFromCart(item) {
@@ -54,8 +58,10 @@ function placeOrder(cardNumber) {
 }
 viewCart();
 addToCart("bananas");
+console.log(total());
 viewCart();
 addToCart("pancake batter");
+console.log(total());
 viewCart();
 addToCart("eggs");
 viewCart();
@@ -63,3 +69,4 @@ addToCart("milk");
 viewCart();
 addToCart("cookies");
 viewCart();
+console.log(total());
