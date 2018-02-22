@@ -27,15 +27,14 @@ function viewCart() {
     
   } else {
     for (let i=0;cart.length>i;i++){
-    var temp2 = Object.keys(cart[i]);
-    if (i === cart.length-1){
-      temp = temp + `and ${temp2} at $${cart[i][temp2]}.`;
-    } else {
-      temp = temp + `${temp2} at $${cart[i][temp2]}, `;
+      var temp2 = Object.keys(cart[i]);
+      if (i === cart.length-1){
+        temp = temp + `and ${temp2} at $${cart[i][temp2]}.`;
+      } else {
+        temp = temp + `${temp2} at $${cart[i][temp2]}, `;
+      }
     }
   }
-  }
-  
   console.log(temp);
 }
 
