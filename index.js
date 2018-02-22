@@ -54,7 +54,7 @@ function removeFromCart(item) {
   var inCart = false;
   var itemIndex = NaN;
   for (let i=0;cart.length>i;i++) {
-    if (Object.keys(cart[i]) === item) {
+    if (cart[i].hasOwnProperty(item)) {
       inCart = true;
       itemIndex = i;
     }
