@@ -49,4 +49,4 @@ viewCart();
 addToCart("pankake batter");
 addToCart("eggs");
 viewCart();
-console.log(Object.hasOwnProperty(cart[0]));
+console.log(Object.keys(cart[0]));
