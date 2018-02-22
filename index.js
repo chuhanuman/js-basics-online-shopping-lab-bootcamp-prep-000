@@ -29,7 +29,7 @@ function viewCart() {
       temp = temp + `${i} at $${i}, `;
     }
   }
-  return temp;
+  console.log(temp);
 }
 
 function total() {
