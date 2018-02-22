@@ -24,7 +24,7 @@ function viewCart() {
   }
   for (let i=0;cart.length>i;i++){
     if (i === cart.length-1){
-      temp = temp + `and ${cart[0]} at $${i}.`;
+      temp = temp + `and ${cart[i]} at $${i}.`;
     } else {
       temp = temp + `${i} at $${i}, `;
     }
