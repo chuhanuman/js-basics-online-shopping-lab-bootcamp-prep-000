@@ -24,9 +24,9 @@ function viewCart() {
   }
   for (let i=0;cart.length>i;i++){
     if (i === cart.length-1){
-      temp = temp + `and ${} at $${}.`;
+      temp = temp + `and ${i} at $${i}.`;
     } else {
-      temp = temp + `${} at $${}, `;
+      temp = temp + `${i} at $${i}, `;
     }
   }
   return temp;
