@@ -62,6 +62,8 @@ function removeFromCart(item) {
   if (inCart) {
     items.splice(itemIndex, itemIndex);
     return cart;
+  } else {
+    
   }
 }
 
