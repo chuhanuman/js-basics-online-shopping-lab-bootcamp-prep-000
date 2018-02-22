@@ -49,4 +49,4 @@ viewCart();
 addToCart("pankake batter");
 addToCart("eggs");
 viewCart();
-console.log(cart[2].eggs);
+console.log(cart[2]);
