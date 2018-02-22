@@ -60,7 +60,7 @@ function removeFromCart(item) {
     }
   }
   if (inCart) {
-    items.splice(itemIndex, itemIndex);
+    item.splice(itemIndex, itemIndex);
     return cart;
   } else {
     console.log("That item is not in your cart.");
